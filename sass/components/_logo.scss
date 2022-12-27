@@ -1,0 +1,19 @@
+.logo {
+  color: var(--title-text-color);
+  font-family: var(--secondary-font);
+  @include font(26, 700, 1.19, 0.03);
+  text-decoration: none;
+
+}
+
+.logo__label {
+  margin-right: 0;
+}
+
+.logo__style {
+  color: var(--accent-color);
+}
+
+.logo__footer {
+  color: var(--bg-color);
+}
