@@ -31,17 +31,17 @@
 
           <button
             type="button"
-            class="menu-open is-open"
+            class="menu-open is-open" data-menu-button
             aria-expanded="false"
             aria-controls="mobile-menu"
           >
             <svg width="24" height="16" aria-label="Перемикач мобільного меню">
               <use
-                class="menu-btn_open"
+                class="menu-btn_close"
                 href="./images/icons.svg#icon-menu_burger"
               ></use>
               <use
-                class="menu-btn_close"
+                class="menu-btn_open"
                 href="./images/icons.svg#icon-close_mob_menu"
               ></use>
             </svg>
@@ -75,7 +75,7 @@
           </ul>
         </nav>
       </div>
-      <div class="mobile-menu" id="mobile-menu">
+      <div class="mobile-menu" id="mobile-menu" data-menu>
         <div class="container">
           <div class="mob-content">
             <div>

@@ -240,11 +240,20 @@ body {
 @media screen and (min-width: 768px) {
   .menu-open {
     display: none;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .menu-open:hover, .menu-open:focus {
-    background-color: var(--accent-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
+}
+.menu-open .menu-btn_close {
+  display: none;
+}
+.menu-open.is-open .menu-btn_close {
+  display: block;
+}
+.menu-open.is-open .menu-btn_open {
+  display: none;
 }
 
 .menu-close {
@@ -258,40 +267,6 @@ body {
   cursor: pointer;
   width: 40px;
   height: 40px;
-}
-
-.menu-open .menu-btn_close {
-  display: none;
-}
-
-.menu-open.is-open .menu-btn_close {
-  display: block;
-}
-
-.menu-open.is-open .menu-btn_open {
-  display: none;
-}
-
-@media screen and (min-width: 767px) {
-  .menu-open {
-    display: none;
-  }
-}
-
-.mobile-menu {
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  background-color: var(--bg-color);
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  padding: 0;
-}
-.mobile-menu .container {
-  display: block;
-  height: 100%;
 }
 
 @media screen and (max-width: 767px) {
@@ -311,6 +286,22 @@ body {
   .mobile-menu {
     display: none;
   }
+}
+
+.mobile-menu {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--bg-color);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  padding: 0;
+}
+.mobile-menu .container {
+  display: block;
+  height: 100%;
 }
 
 .mob-content {
@@ -562,7 +553,6 @@ body {
 
 @media screen and (min-width: 1200px) {
   .header__icon.tel {
-    width: 10px;
     height: 16px;
   }
 }
@@ -573,7 +563,8 @@ body {
   background-color: var(--bg-color-black);
   color: var(--bg-color);
   text-align: center;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/heromob1x.jpg);
+  max-width: 1600px;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(..//../images/heromob1x.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -581,17 +572,17 @@ body {
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/heromob2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(..//../images/heromob2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/herotab1x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(..//../images/herotab1x.jpg);
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/herotab2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(..//../images/herotab2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
