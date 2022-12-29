@@ -44,13 +44,13 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../images/herodesctop1x.jpg);
+      url(..//../images/herodesctop1x.jpg);
     @include retina {
       background-image: linear-gradient(
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(../../images/herodesctop2x.jpg);
+        url(..//../images/herodesctop2x.jpg);
     }
   }
 }
