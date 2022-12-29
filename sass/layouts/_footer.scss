@@ -13,7 +13,10 @@
     flex-wrap: wrap;
     align-items: baseline;
   }
-}
+   @media screen and (min-width: 1200px){
+   display: flex;
+   flex-wrap: nowrap;
+}}
 
 .footer__navigation {
   text-align: center;
@@ -24,9 +27,12 @@
   }
   @media screen and (min-width: 1200px) {
     text-align: left;
-    margin-right: 94px;
+      margin-right: 94px;
+  margin-left: 0;
   }
 }
+
+
 
 .footer__adress {
   padding: 0;
@@ -62,6 +68,7 @@
   margin-bottom: 60px;
   @media screen and (min-width: 1200px) {
     text-align: left;
+    margin-right: 94px;
   }
 }
 
