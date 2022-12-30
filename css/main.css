@@ -269,7 +269,7 @@ body {
   .mobile-menu.is-open {
     position: fixed;
     width: 100vw;
-    height: auto;
+    height: 100vh;
     display: flex;
     z-index: 1;
     transform: translateX(0);
@@ -307,8 +307,8 @@ body {
   padding-left: 40px;
 }
 
-.mob-content__menu {
-  margin-bottom: 306px;
+.mob-navigation__list {
+  margin-bottom: auto;
 }
 
 .mob-navigation__item {

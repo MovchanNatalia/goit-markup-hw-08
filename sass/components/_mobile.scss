@@ -46,7 +46,7 @@
   @media screen and(max-width:767px) {
     position: fixed;
     width: 100vw;
-    height: auto;
+    height: 100vh;
     display: flex;
     z-index: 1;
     transform: translateX(0);
@@ -81,9 +81,17 @@
   padding-left: 40px;
 }
 
-.mob-content__menu {
-  margin-bottom: 306px;
+.mob-navigation__list{
+  margin-bottom: auto;
 }
+
+// .mob-content__menu {
+//   margin-bottom: auto;
+// }
+
+// .mob-thumb__contact{
+//   margin-top: auto;
+// }
 
 .mob-navigation__item {
   @include font(40, 500, 1.175, 0.02);
