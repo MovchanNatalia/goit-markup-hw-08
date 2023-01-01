@@ -25,11 +25,10 @@
     <header class="header">
       <div class="container header__container">
         <nav class="navigation">
-          <a href="#" class="logo"
+          <a href="#" class="logo logo__header"
             ><span class="logo__style">Web</span>Studio</a
           >
-
-          <button
+          <!-- <button
             type="button"
             class="menu-open is-open"
             data-menu-button
@@ -46,7 +45,7 @@
                 href="./images/icons.svg#icon-close_mob_menu"
               ></use>
             </svg>
-          </button>
+          </button> -->
 
           <ul class="navigation__list">
             <li class="navigation__item">
@@ -75,9 +74,40 @@
             </li>
           </ul>
         </nav>
+
+        <button
+          type="button"
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+            <use
+              class="menu-btn_close"
+              href="./images/icons.svg#icon-menu"
+            ></use>
+          </svg>
+        </button>
+
       </div>
-      <div class="mobile-menu" id="mobile-menu" data-menu>
+
+    </header>
+
+          <div class="mobile-menu js-menu-container" id="mobile-menu">
         <div class="mob-content">
+          <button
+            type="button"
+            class="menu-toggle js-close-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+              <use
+                class="menu-btn_open"
+                href="./images/icons.svg#icon-close-btn"
+              ></use>
+            </svg>
+          </button>
           <ul class="mob-navigation__list">
             <li class="mob-navigation__item list">
               <a href="./index.html" class="mob-navigation__link current"
@@ -123,7 +153,8 @@
           </ul>
         </div>
       </div>
-    </header>
+
+
     <main>
       <section class="hero">
         <h1 class="hero__text">
@@ -463,32 +494,38 @@
             <li class="clients__icon">
               <a href="#" class="clients__link"
                 ><svg width="106" height="60">
-                  <use href="./images/icons.svg#icon-YaCo"></use></svg              ></a>
+                  <use href="./images/icons.svg#icon-YaCo"></use></svg
+              ></a>
             </li>
             <li class="clients__icon">
               <a href="#" class="clients__link"
                 ><svg width="106" height="60">
-                  <use href="./images/icons.svg#icon-Tagline"></use></svg              ></a>
+                  <use href="./images/icons.svg#icon-Tagline"></use></svg
+              ></a>
             </li>
             <li class="clients__icon">
               <a href="#" class="clients__link"
                 ><svg width="106" height="60">
-                  <use href="./images/icons.svg#icon-Company"></use></svg              ></a>
+                  <use href="./images/icons.svg#icon-Company"></use></svg
+              ></a>
             </li>
             <li class="clients__icon">
               <a href="#" class="clients__link"
                 ><svg width="106" height="60">
-                  <use href="./images/icons.svg#icon-Foster"></use></svg              ></a>
+                  <use href="./images/icons.svg#icon-Foster"></use></svg
+              ></a>
             </li>
             <li class="clients__icon">
               <a href="#" class="clients__link"
                 ><svg width="106" height="60">
-                  <use href="./images/icons.svg#icon-Brand"></use></svg              ></a>
+                  <use href="./images/icons.svg#icon-Brand"></use></svg
+              ></a>
             </li>
             <li class="clients__icon">
               <a href="#" class="clients__link"
                 ><svg width="106" height="60">
-                  <use href="./images/icons.svg#icon-CoTagLi"></use></svg              ></a>
+                  <use href="./images/icons.svg#icon-CoTagLi"></use></svg
+              ></a>
             </li>
           </ul>
         </div>
