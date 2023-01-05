@@ -1,8 +1,12 @@
 .logo {
   color: var(--title-text-color);
   font-family: var(--secondary-font);
-  @include font(26, 700, 1.19, 0.03);
+  @include font(24, 700, 1.19, 0.03);
   text-decoration: none;
+@media screen and(min-width: 1200px){
+  @include font(26, 700, 1.19, 0.03);
+}
+
 }
 
 .logo__header {

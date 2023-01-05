@@ -3,10 +3,11 @@
 }
 
 .navigation {
-  @media screen and (min-width: 768px){
-  display: flex;
-  justify-content: space-between;
-  align-items: center;}  
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .navigation__list {
@@ -90,7 +91,7 @@
     justify-content: center;
     align-items: center;
     @include font(14, 500, 1.14, 0.02);
-        margin-left: auto;
+    margin-left: auto;
     & .header__item + .header__item {
       margin-left: 40px;
     }
@@ -103,7 +104,7 @@
     margin-bottom: 10px;
     @include font(12, 500, 1.16, 0.02);
   }
-  @media screen and (min-width: 1200px){
+  @media screen and (min-width: 1200px) {
     margin-bottom: 0;
     @include font(14, 500, 1.14, 0.02);
   }
@@ -135,13 +136,13 @@
   @media screen and (min-width: 768px) {
     margin-right: 8px;
   }
-    @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     width: 16px;
     height: 12px;
   }
 }
-.header__icon.tel{
-      @media screen and (min-width: 1200px) {    
+.header__icon.tel {
+  @media screen and (min-width: 1200px) {
     height: 16px;
   }
 }

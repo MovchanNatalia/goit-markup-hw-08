@@ -13,7 +13,7 @@
   }
 }
 
-.header__prtfolio {
+.header__portfolio {
   border-bottom: 1px solid #ececec;
 }
 
@@ -62,7 +62,7 @@
   position: absolute;
   top: 0%;
   left: 0%;
-  width: 370px;
+  // width: 370px;
   height: 294px;
   padding: 63px 24px;
   background-color: rgba(33, 150, 243, 0.9);
@@ -98,8 +98,4 @@
   letter-spacing: 0.03em;
 }
 
-img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
+

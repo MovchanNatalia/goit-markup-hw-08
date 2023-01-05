@@ -8,7 +8,7 @@
   top: 10px;
   right: 15px;
   border: none;
-  background: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
   cursor: pointer;
 }
 
@@ -30,6 +30,7 @@
 
 .mobile-menu {
   position: fixed;
+  z-index: 999;
   width: 100%;
   background-color: var(--bg-color);
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),

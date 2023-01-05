@@ -93,11 +93,19 @@ body {
 .logo {
   color: var(--title-text-color);
   font-family: var(--secondary-font);
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -251,7 +259,7 @@ body {
   top: 10px;
   right: 15px;
   border: none;
-  background: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
   cursor: pointer;
 }
 
@@ -273,6 +281,7 @@ body {
 
 .mobile-menu {
   position: fixed;
+  z-index: 999;
   width: 100%;
   background-color: var(--bg-color);
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
@@ -1063,7 +1072,7 @@ img {
   }
 }
 
-.header__prtfolio {
+.header__portfolio {
   border-bottom: 1px solid #ececec;
 }
 
@@ -1113,7 +1122,6 @@ img {
   position: absolute;
   top: 0%;
   left: 0%;
-  width: 370px;
   height: 294px;
   padding: 63px 24px;
   background-color: rgba(33, 150, 243, 0.9);
@@ -1150,12 +1158,6 @@ img {
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.03em;
-}
-
-img {
-  display: block;
-  width: 100%;
-  height: auto;
 }
 
 .backdrop {
